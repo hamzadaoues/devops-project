@@ -8,3 +8,6 @@ run:install
 
 clean:
 	./scripts/clean.sh
+
+test:install
+	./scripts/test.sh
