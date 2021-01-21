@@ -2,10 +2,10 @@ const express = require('express')
 const app = express()
 const functions = require('./functions.js');
 
-let port = process.env.PORT || 8901;
+let port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World v3!')
 })
 
 app.get('/fiboRecursive',(req,res)=>{

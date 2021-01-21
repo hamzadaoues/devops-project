@@ -1,10 +1,10 @@
-PORT = 3001
+PORT = 3000
 
 install:clean
 	./scripts/install.sh
 
 run:install
-	./scripts/run.sh $(PORT)
+	./scr3000ipts/run.sh $(PORT)
 
 clean:
 	./scripts/clean.sh
