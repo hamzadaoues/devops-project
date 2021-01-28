@@ -33,3 +33,8 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: hamza2021/hamza-image
         tags: latest
+    - name: Update kubernetes cluster
+      uses: satak/webrequest-action@master
+      with:
+        url: https://py6vv09n5c.execute-api.us-east-1.amazonaws.com/default/UpdateKuber
+        method: GET
