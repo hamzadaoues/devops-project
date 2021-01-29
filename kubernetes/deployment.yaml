@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-v1
+spec:
+  selector:
+    matchLabels:
+      app: deployment-hamza
+  replicas: 6 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: deployment-hamza
+    spec:
+      containers:
+        - name: hamza-image
+          image: hamza2021/hamza-image:latest
+          imagePullPolicy: "Always"
+          ports:
+            - containerPort: 3000
+

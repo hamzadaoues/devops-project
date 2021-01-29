@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: service-v1
+spec:
+  type: LoadBalancer
+  selector:
+    app: deployment-hamza
+  ports:
+    - nodePort: 30000
+      port: 30001
+      targetPort: 3000
